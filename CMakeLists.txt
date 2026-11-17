@@ -10,4 +10,8 @@ add_executable(Color_Coded main.c
         common/used_functions.h
 )
 
-target_link_libraries(Color_Coded PRIVATE ${CMAKE_SOURCE_DIR}/lib/libraylib.a)
+target_link_libraries(Color_Coded PRIVATE ${CMAKE_SOURCE_DIR}/lib/libraylib.a
+        winmm
+        opengl32
+        gdi32
+)
